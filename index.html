@@ -18,14 +18,16 @@
 
 			<header class="header">
 				<div class="header__top">
-					<div class="header__contact">
-						<a href="tel:+7771001234" class="contact">
-							<img class="contact__img" src="img/phone.png">
-							<span class="contact__text">Call Us +777 (100) 1234</span>
-						</a>
-					</div>
-					<div class="header__welcome">Welcome visitor you can 
-						<a href="#">login</a> or <a href="#">create an account</a>.
+					<div class="header__left">
+						<div class="header__contact">
+							<a href="tel:+7771001234" class="contact">
+								<img class="contact__img" src="img/phone.png">
+								<span class="contact__text">Call Us +777 (100) 1234</span>
+							</a>
+						</div>
+						<div class="header__wellcome">Welcome visitor you can 
+							<a href="#">login</a> or <a href="#">create an account</a>.
+						</div>
 					</div>
 					<div class="header__button">
 						<div class="header__lang">
@@ -83,12 +85,12 @@
 								</a>
 							</li>
 							<li class="menu__item">
-								<a href="#" class="menu__link">
+								<a href="#" class="menu__link menu__link-js">
 									<span class="menu__text">Log in</span>
 								</a>
 							</li>
 							<li class="menu__item">
-								<a href="#" class="menu__link menu__link_border">
+								<a href="#" class="menu__link menu__link_border menu__link-js">
 									<span class="menu__text">Sign up</span>
 								</a>
 							</li>
@@ -129,72 +131,62 @@
 			</nav>
 
 			<section class="slider">
-				<div class="slider__list-wrap">
-					<ul class="slider__list">
-						<li class="slider__item active">
-							<div class="hero">
-								<div class="hero__img">
-									<img class="hero__img-pic" src="img/hero-img.png">
+				<ul class="slider__list">
+					<li class="slider__item active">
+						<div class="hero">
+							<div class="hero__img">
+								<img class="hero__img-pic" src="img/hero-img.png">
+							</div>
+							<div class="hero__about">
+								<div class="hero__title">
+									<h1 class="title">Breeze noticeables</h1>
 								</div>
-								<div class="hero__about">
-									<div class="hero__title">
-										<h1 class="title">Breeze noticeables</h1>
-									</div>
-									<div class="hero__desc">
-										<p class="hero__desc-text">
-											The new series of natural air fresheners. </p>
-										<span><p class="hero__desc-text">Febreze noticeables meadows & rain</p>
-										<p class="hero__desc-text">air freshener refill.</p></span>
-									</div>
+								<div class="hero__desc">
+									<p class="hero__desc-text">
+										The new series of natural air fresheners. </p>
+									<span><p class="hero__desc-text">Febreze noticeables meadows & rain</p>
+									<p class="hero__desc-text">air freshener refill.</p></span>
 								</div>
 							</div>
-						</li>
-						<li class="slider__item">
-							<div class="hero">
-								<div class="hero__img">
-									<img class="hero__img-pic" src="img/hero-img.png">
+						</div>
+					</li>
+					<li class="slider__item">
+						<div class="hero">
+							<div class="hero__img">
+								<img class="hero__img-pic" src="img/hero-img.png">
+							</div>
+							<div class="hero__about">
+								<div class="hero__title">
+									<h1 class="title">Breeze noticeables</h1>
 								</div>
-								<div class="hero__about">
-									<div class="hero__title">
-										<h1 class="title">Breeze noticeables</h1>
-									</div>
-									<div class="hero__desc">
-										<p class="hero__desc-text">
-											The new series of natural air fresheners. </p>
-										<span><p class="hero__desc-text">Febreze noticeables meadows & rain</p>
-										<p class="hero__desc-text">air freshener refill.</p></span>
-									</div>
+								<div class="hero__desc">
+									<p class="hero__desc-text">
+										The new series of natural air fresheners. </p>
+									<span><p class="hero__desc-text">Febreze noticeables meadows & rain</p>
+									<p class="hero__desc-text">air freshener refill.</p></span>
 								</div>
-							</div>	
-						</li>
-						<li class="slider__item">
-							<div class="hero">
-								<div class="hero__img">
-									<img class="hero__img-pic" src="img/hero-img.png">
+							</div>
+						</div>	
+					</li>
+					<li class="slider__item">
+						<div class="hero">
+							<div class="hero__img">
+								<img class="hero__img-pic" src="img/hero-img.png">
+							</div>
+							<div class="hero__about">
+								<div class="hero__title">
+									<h1 class="title">Breeze noticeables</h1>
 								</div>
-								<div class="hero__about">
-									<div class="hero__title">
-										<h1 class="title">Breeze noticeables</h1>
-									</div>
-									<div class="hero__desc">
-										<p class="hero__desc-text">
-											The new series of natural air fresheners. </p>
-										<span><p class="hero__desc-text">Febreze noticeables meadows & rain</p>
-										<p class="hero__desc-text">air freshener refill.</p></span>
-									</div>
+								<div class="hero__desc">
+									<p class="hero__desc-text">
+										The new series of natural air fresheners. </p>
+									<span><p class="hero__desc-text">Febreze noticeables meadows & rain</p>
+									<p class="hero__desc-text">air freshener refill.</p></span>
 								</div>
-							</div>	
-						</li>	
-					</ul>
-				</div>
-				<div class="slider__controls">
-					<span class="slider__controls-button slider__controls-button_prev">
-						<i class="fa fa-chevron-left"></i>
-					</span>
-					<span class="slider__controls-button slider__controls-button_next">
-						<i class="fa fa-chevron-right"></i>
-					</span>
-				</div>
+							</div>
+						</div>	
+					</li>	
+				</ul>
 			</section>
 		
 			<section class="about">
@@ -234,15 +226,46 @@
 					</li>
 				</ul>
 			</section>
-
 		</div>
+			<div class="pop-up open">
+				<div class="pop-up__content">
+					<div class="pop-up__log">
+						<div class="pop-up__head">
+							<h2 class="pop-up__title">Log in</h2>
+						</div>
+						<form action="" method="post" class="form">
+							<button class="form__button form__button_close">X</button>
+							<div class="form__fields">
+								<input class="form__input" type="email" placeholder="Email Address*">
+								<input class="form__input" type="password" placeholder="Password*">
+								<button class="form__button">Log in</button>
+							</div>
+						</form>
+					</div>
+					<div class="pop-up__sing">
+						<div class="pop-up__head">
+							<h2 class="pop-up__title">Sing up</h2>
+						</div>
+						<form action="" method="post" class="form">
+							<div class="form__fields">
+								<input class="form__input" type="text" placeholder="First Name*">
+								<input class="form__input" type="text" placeholder="Last Name*">
+								<input class="form__input" type="email" placeholder="Email Address*">
+								<input class="form__input" type="password" placeholder="Set A Password*">
+								<button class="form__button">Get started</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		
 	</div>
 			
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-
-	<script src="js/slider.js"></script>
-
+	<script src="js/slick.js" ></script>
+	<script src="js/common.js"></script>
 
 </body>
 </html>
