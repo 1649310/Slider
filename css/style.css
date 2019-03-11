@@ -651,16 +651,19 @@ li.slick-active::before {
   pointer-events: none;
   -webkit-transition: all .5s ease;
   -o-transition: all .5s ease;
-  transition: all .5s ease; }
+  transition: all .5s ease;
+  z-index: 2;
+  padding: 20px;
+  overflow: auto; }
   .pop-up.open {
     opacity: 1;
     pointer-events: all; }
 
 .pop-up__content {
   background: #f5f7f9;
-  width: 50%;
+  width: 35%;
   min-width: 300px;
-  margin: 0 auto;
+  margin: auto;
   -webkit-border-radius: 3px;
           border-radius: 3px;
   position: relative;
@@ -821,8 +824,8 @@ li.slick-active::before {
   .about {
     margin-bottom: 30px; }
   .about__img {
-    width: 45px;
-    height: 45px; }
+    width: 40px;
+    height: 40px; }
   .about__link:hover {
     border: 1px solid #e6e9ed; } }
 
@@ -907,6 +910,8 @@ li.slick-active::before {
   .menu__link {
     border-right: none;
     padding: 8px 18px; }
+  .search__input {
+    width: 320px; }
   .nav {
     height: auto; }
   .nav__list {
